@@ -38,6 +38,9 @@
   /* fonts */
   --heading-font-family: "Fraunces 144pt", "Times New Roman", serif;
   --body-font-family: "Manrope", "Arial", sans-serif;
+
+  /* transition */
+  --transition-duration: 0.3s;
 }
 
 
