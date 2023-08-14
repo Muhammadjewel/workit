@@ -131,6 +131,129 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+
+/* LOGO */
+.logo {
+  display: block;
+  text-decoration: none;
+  transition: opacity ease var(--transition-duration);
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 97px;
+  height: 26px;
+}
+
+
+/* UNDERLINE-LINK */
+.underline-link {
+  display: inline-block;
+  border-bottom: 3px solid var(--eucaplyptus);
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  transition: color ease var(--transition-duration),
+    opacity ease var(--transition-duration);
+}
+
+.underline-link:hover {
+  color: var(--eucaplyptus);
+}
+
+.underline-link:active {
+  opacity: 0.6;
+}
+
+
+/* UNDERLINE-TEXT */
+.underline-text {
+  display: inline-block;
+  border-bottom: 3px solid var(--eucaplyptus);
+}
+
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 11px 24px 14px;
+  border: 2px solid transparent;
+  background-color: var(--eucaplyptus);
+  color: var(--dark-purple);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color ease var(--transition-duration),
+    background-color ease var(--transition-duration),
+    color ease var(--transition-duration),
+    opacity ease var(--transition-duration);
+}
+
+.button:hover {
+  border-color: var(--eucaplyptus);
+  background-color: transparent;
+  color: var(--eucaplyptus);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+
+/* SITE-HEADER-HERO-WRAPPER */
+.site-header-hero-wrapper {
+  padding-top: 56px;
+  background-color: var(--dark-purple);
+}
+
+
+/* SITE-HEADER */
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+
+/* HERO */
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__heading {
+  max-width: 635px;
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.hero__button {
+  margin-bottom: 50px;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
