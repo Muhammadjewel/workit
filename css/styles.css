@@ -243,10 +243,15 @@ select:-webkit-autofill:focus {
   margin-top: 0;
   margin-bottom: 36px;
   font-family: var(--heading-font-family);
+  font-weight: 600;
   font-size: 80px;
   line-height: 1;
   color: #fff;
   text-align: center;
+}
+
+.hero__img {
+  display: block;
 }
 
 .hero__button {
@@ -262,4 +267,42 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+
+@media only screen and (max-width: 768px) {
+  .site-header-hero-wrapper {
+    padding-top: 36px;
+  }
+
+  .site-header__container {
+    margin-bottom: 60px;
+  }
+
+  .hero__heading {
+    max-width: 465px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .site-header__container {
+    margin-bottom: 64px;
+  }
+
+  .hero__heading {
+    max-width: 80%;
+    font-size: 50px;
+  }
+
+  .hero__button {
+    margin-bottom: 60px;
+  }
 }

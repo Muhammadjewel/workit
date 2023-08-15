@@ -31,9 +31,11 @@
         <h1 class="hero__heading">Data <span class="underline-text">tailored</span> to your needs.</h1>
         <a class="hero__button button" href="#">Learn more</a>
 
-        <picture>
+        <picture class="hero__picture">
+          <source srcset="img/image-hero-mobile.png 1x, img/image-hero-mobile@2x.png 2x" media="(max-width:500px)">
+          <source srcset="img/image-hero-tablet.png 1x, img/image-hero-tablet@2x.png 2x" media="(max-width:768px)">
           <source srcset="img/image-hero.webp" type="image/webp">
-          <img src="img/image-hero.png" alt="Phone with statistics illustration on the sceen" width="767" height="441" srcset="img/image-hero.png 1x, img/image-hero@2x.png 2x">
+          <img class="hero__img" src="img/image-hero.png" alt="Phone with statistics illustration on the sceen" width="767" height="441" srcset="img/image-hero.png 1x, img/image-hero@2x.png 2x">
         </picture>
       </div>
     </div>
