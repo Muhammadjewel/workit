@@ -259,6 +259,66 @@ select:-webkit-autofill:focus {
 }
 
 
+/* FEATURES */
+.features {
+  padding-top: 255px;
+  padding-bottom: 170px;
+  background-color: var(--ghost-white);
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: features-list;
+}
+
+.features__item {
+  width: calc((100% - 52px) / 3);
+  counter-increment: features-list;
+}
+
+
+/* FEATURE */
+.feature {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.feature::before {
+  flex-shrink: 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--davys-grey);
+  margin-bottom: 56px;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 40px;
+  font-family: var(--heading-font-family);
+  text-align: center;
+  content: counter(features-list);
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.feature__description {
+  margin: 0;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -269,6 +329,55 @@ only screen and (                min-resolution: 2dppx) {
 
 }
 
+
+@media only screen and (max-width: 1024px) {
+  .features {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .features__list {
+    flex-direction: column;
+    max-width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features__item {
+    width: 100%;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .feature {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .feature::before {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .feature__inner {
+    text-align: left;
+  }
+
+  .feature__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .feature__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .site-header-hero-wrapper {
@@ -304,5 +413,27 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__button {
     margin-bottom: 60px;
+  }
+
+  .features {
+    padding-top: 155px;
+    padding-bottom: 70px;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature::before {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .feature__inner {
+    text-align: center;
   }
 }
