@@ -320,6 +320,57 @@ select:-webkit-autofill:focus {
 }
 
 
+/* TEST-CTA */
+.test-cta {
+  padding-top: 285px;
+  padding-bottom: 60px;
+}
+
+.test-cta__inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 730px;
+  margin-left: auto;
+}
+
+.test-cta__box {
+  position: relative;
+  z-index: 2;
+  padding: 64px;
+  background-color: var(--dark-purple);
+  color: #fff;
+}
+
+.test-cta__picture {
+  display: block;
+}
+
+.test-cta__img {
+  position: absolute;
+  z-index: 1;
+  right: calc(100% - 109px);
+  bottom: 109px;
+  width: 477px;
+  height: 477px;
+  border-radius: 50%;
+}
+
+.test-cta__heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+}
+
+.test-cta__description {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
