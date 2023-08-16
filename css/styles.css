@@ -312,6 +312,7 @@ select:-webkit-autofill:focus {
   font-family: var(--heading-font-family);
   font-size: 32px;
   line-height: 40px;
+  font-weight: 600;
 }
 
 .feature__description {
