@@ -257,6 +257,10 @@ select:-webkit-autofill:focus {
   padding-top: 56px;
   padding-bottom: 255px;
   background-color: var(--dark-purple);
+  background-image: url("../img/bg-pattern-1.svg"),
+    url("../img/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 689px) 116px, calc(50% + 680px) 313px;
 }
 
 .site-header-hero-wrapper::after {
@@ -466,6 +470,12 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
+@media only screen and (max-width: 1300px) {
+  .site-header-hero-wrapper {
+    background-position: left -200px top 116px, right -70px top 313px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .hero__img {
     width: 630px;
@@ -607,6 +617,10 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media only screen and (max-width: 700px) {
+  .site-header-hero-wrapper {
+    background-image: none;
+  }
+
   .test-cta {
     padding-top: 328px;
     padding-bottom: 54px;
