@@ -616,6 +616,11 @@ only screen and (                min-resolution: 2dppx) {
     width: 480px;
   }
 
+  .features {
+    padding-top: 240px;
+    padding-bottom: 67px;
+  }
+
   .test-cta__inner {
     max-width: 514px;
   }
@@ -691,8 +696,8 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .features {
-    padding-top: 155px;
-    padding-bottom: 70px;
+    padding-top: 173px;
+    padding-bottom: 54px;
   }
 
   .features__item:not(:last-child) {
