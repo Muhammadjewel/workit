@@ -388,7 +388,7 @@ select:-webkit-autofill:focus {
 
 /* TEST-CTA */
 .test-cta {
-  padding-top: 285px;
+  padding-top: 350px;
   padding-bottom: 60px;
 }
 
@@ -561,7 +561,7 @@ only screen and (                min-resolution: 2dppx) {
 
 @media only screen and (max-width: 900px) {
   .test-cta {
-    padding-top: 250px;
+    padding-top: 290px;
     padding-bottom: 40px;
   }
 
@@ -715,6 +715,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .feature__inner {
     text-align: center;
+  }
+
+  .test-cta {
+    padding-top: 350px;
   }
 
   .site-footer {
